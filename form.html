@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      
+      <div class="container" >
+
+      <form id="form" action="/">
+        <h1>Enter your registration infos</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quae, facere placeat provident culpa suscipit laboriosam rerum expedita debitis quibusdam, accusamus quo repudiandae odio necessitatibus vitae possimus. Veniam, atque repellat?</p>
+          <div class="input-control">
+            <label>enter your first name : </label>
+          <input id="first_name" type="text" /><br />
+          </div>
+         <div class="input-control">
+          <label>enter your last name : </label>
+          <input id="last_name"  type="text" /><br />
+         </div>
+          <div class="input-control">
+            <label>enter your Email : </label>
+          <input id="email"  type="text" /><br />
+          </div>
+         <div class="input-control">
+          <label>enter your phone number : </label>
+          <input id="phone" type="text" /><br />
+         </div>
+         <label>what is your gender : </label>
+         <div class="input-gender"> 
+          <label>male</label> <input id="gender" type="radio" name="gender">
+           <label>female</label> <input id="gender" type="radio" name="gender">
+         </div>
+          <div class="input-group">
+            <select>
+              <option value="1">DW101</option>
+              <option value="2">DW102</option>
+              <option value="3">DW103</option>
+              <option value="4">DM101</option>
+              <option value="5">DM102</option>
+            </select>
+          </div>
+          <div class="input-clubs">
+            <select multiple>
+              <option value="1">Informatique</option>
+              <option value="2">Robotique</option>
+              <option value="3">Jeu d'échecs</option>
+              <option value="4">Musique</option>
+              <option value="5">Foot</option>
+              <option value="5">Théatre</option>
+            </select>
+            <div></div>
+          </div>
+          <button>Sign Up</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

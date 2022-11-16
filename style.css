@@ -1,0 +1,86 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #377894, #67c2e0, #0ea5e6);
+  font-family: 'Poppins', sans-serif;
+}
+h1{
+  color: #0f2027;
+  text-align: center;
+  font-size: 3rem;
+}
+main label{
+  font-size: 1rem;
+}
+p{
+  font-size: 1rem;
+  width: 90%;
+}
+form{
+  width: 70%;
+  margin: 10% auto 10% auto;
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+.input-control input, .input-clubs option,.input-group option,.input-clubs select,.input-group select {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px; 
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 95%;
+}
+.input-clubs option,.input-group option,.input-clubs select,.input-group select{
+  width: 97.5%;
+  margin-bottom: 10px;
+}
+.input-clubs select,.input-group select{
+  margin-bottom: 30px;
+}
+option:focus, select:focus{
+  outline: 0;
+}
+.input-gender{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+  width: 95%;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  border: 2px solid #f0f0f0;
+}
+.input-gender input{
+  margin: 0 20px;
+}
+button{
+  padding: 10px;
+  margin-top: 10px;
+  width: 92.5%;
+  color: white;
+  background-color: rgb(41, 57, 194);
+  border: none;
+  border-radius: 4px;
+}
+
+input:focus{
+  outline: 0;
+}
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+.input-control .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
