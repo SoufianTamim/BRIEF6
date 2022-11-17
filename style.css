@@ -24,6 +24,31 @@ form{
   border-radius: 4px;
   font-size: 12px;
 }
+.alertbox {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+.closebtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
 .input-control {
   display: flex;
   flex-direction: column;
@@ -58,8 +83,8 @@ option:focus, select:focus{
 }
 .input-gender input{
   margin: 0 20px;
-}
-button{
+} 
+#submit{
   padding: 10px;
   margin-top: 10px;
   width: 92.5%;

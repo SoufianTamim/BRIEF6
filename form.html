@@ -9,33 +9,47 @@
   </head>
   <body>
     <main>
-      
-      <div class="container" >
+      <div class="container">
+        <form id="form">
+          <div id="alertbox" role="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+          </div>
 
-      <form id="form" action="/">
-        <h1>Enter your registration infos</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quae, facere placeat provident culpa suscipit laboriosam rerum expedita debitis quibusdam, accusamus quo repudiandae odio necessitatibus vitae possimus. Veniam, atque repellat?</p>
+          <h1>Enter your registration infos</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+            quae, facere placeat provident culpa suscipit laboriosam rerum
+            expedita debitis quibusdam, accusamus quo repudiandae odio
+            necessitatibus vitae possimus. Veniam, atque repellat?
+          </p>
           <div class="input-control">
             <label>enter your first name : </label>
-          <input id="first_name" type="text" /><br />
+            <input name="firstname" id="first_name" type="text" />
+            <div class="error"></div>
           </div>
-         <div class="input-control">
-          <label>enter your last name : </label>
-          <input id="last_name"  type="text" /><br />
-         </div>
+          <div class="input-control">
+            <label>enter your last name : </label>
+            <input id="last_name" type="text" />
+            <div class="error"></div>
+          </div>
           <div class="input-control">
             <label>enter your Email : </label>
-          <input id="email"  type="text" /><br />
+            <input id="email" type="text" />
+            <div class="error"></div>
           </div>
-         <div class="input-control">
-          <label>enter your phone number : </label>
-          <input id="phone" type="text" /><br />
-         </div>
-         <label>what is your gender : </label>
-         <div class="input-gender"> 
-          <label>male</label> <input id="gender" type="radio" name="gender">
-           <label>female</label> <input id="gender" type="radio" name="gender">
-         </div>
+          <div class="input-control">
+            <label>enter your phone number : </label>
+            <input id="phone" type="text" />
+            <div class="error"></div>
+          </div>
+          <label>what is your gender : </label>
+          <div class="input-gender">
+            <label>male</label>
+            <input id="gender" type="radio" name="gender" />
+            <label>female</label>
+            <input id="gender" type="radio" name="gender" />
+            <div class="error"></div>
+          </div>
           <div class="input-group">
             <select>
               <option value="1">DW101</option>
@@ -44,6 +58,7 @@
               <option value="4">DM101</option>
               <option value="5">DM102</option>
             </select>
+            <div class="error"></div>
           </div>
           <div class="input-clubs">
             <select multiple>
@@ -54,11 +69,14 @@
               <option value="5">Foot</option>
               <option value="5">Théatre</option>
             </select>
-            <div></div>
+            <div class="error"></div>
           </div>
-          <button>Sign Up</button>
-        </div>
-      </form>
+
+          <button id="submit" type="submit" >Sign Up</button>
+
+          <script src="/form.js"></script>
+        </form>
+      </div>
     </main>
   </body>
 </html>
