@@ -10,8 +10,9 @@
   <body>
     <main>
       <div class="container">
-        <form id="form">
-          <div id="alertbox" role="alert">
+        <form id="form" name="myform">
+
+          <div name="alertbox" id="alertbox" role="alert">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
           </div>
 
@@ -29,7 +30,7 @@
           </div>
           <div class="input-control">
             <label>enter your last name : </label>
-            <input id="last_name" type="text" />
+            <input name="lastname" id="last_name" type="text" />
             <div class="error"></div>
           </div>
           <div class="input-control">
@@ -51,17 +52,15 @@
             <div class="error"></div>
           </div>
           <div class="input-group">
-            <select>
-              <option value="1">DW101</option>
-              <option value="2">DW102</option>
-              <option value="3">DW103</option>
-              <option value="4">DM101</option>
-              <option value="5">DM102</option>
-            </select>
+            <input type="radio" name="group"><label>DW101</label>
+            <input type="radio" name="group"><label>DW102</label>
+            <input type="radio" name="group"><label>DW103</label>
+            <input type="radio" name="group"><label>DM101</label>
+            <input type="radio" name="group"><label>DM102</label>
             <div class="error"></div>
           </div>
           <div class="input-clubs">
-            <select multiple>
+            <select name="" multiple>
               <option value="1">Informatique</option>
               <option value="2">Robotique</option>
               <option value="3">Jeu d'échecs</option>
@@ -72,7 +71,7 @@
             <div class="error"></div>
           </div>
 
-          <button id="submit" type="submit" >Sign Up</button>
+          <button name="submit" id="submit" type="submit" >Sign Up</button>
 
           <script src="/form.js"></script>
         </form>
