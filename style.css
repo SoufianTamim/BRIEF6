@@ -24,29 +24,6 @@ form {
   border-radius: 4px;
   font-size: 12px;
 }
-#alertbox {
-  padding: 20px;
-  background-color: #f44336;
-  color: white;
-  font-size: 1rem;
-  border-radius: 30px;
-  width: 80%;
-  margin: auto;
-}
-.input-group {
-  border: 2px solid #f0f0f0;
-  border-radius: 4px;
-  display: block;
-  font-size: 12px;
-  padding: 10px;
-  width: 95%;
-  background-color: white;
-}
-.input-group input {
-  margin-right: 1rem;
-  margin-left: 5rem;
-}
-
 .closebtn {
   display: flex;
   justify-content: flex-end;
@@ -59,20 +36,19 @@ form {
   cursor: pointer;
   transition: 0.3s;
 }
-
 .closebtn:hover {
   color: black;
 }
-
 .input-control {
   display: flex;
   flex-direction: column;
 }
+option:focus,
+select:focus {
+  outline: 0;
+}
 
-.input-control input,
-.input-clubs option,
-.input-group option,
-.input-clubs select {
+.input-control input{
   border: 2px solid #f0f0f0;
   border-radius: 4px;
   display: block;
@@ -80,40 +56,20 @@ form {
   padding: 10px;
   width: 95%;
 }
-
-.input-clubs option,
-.input-group option{
+#input-clubs option{
   width: 95%;
   margin-bottom: 10px;
 }
 
-.input-clubs select{
+#input-clubs select{
   width: 99%;
-
+  
 }
-.input-clubs select,
-.input-group select {
+#input-clubs select,
+#input-group select {
   margin-bottom: 30px;
 }
 
-option:focus,
-select:focus {
-  outline: 0;
-}
-
-.input-gender {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  background-color: white;
-  width: 95%;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  border: 2px solid #f0f0f0;
-}
-.input-gender input {
-  margin: 0 20px;
-}
 #submit {
   padding: 10px;
   margin-top: 10px;
@@ -124,9 +80,81 @@ select:focus {
   border-radius: 4px;
 }
 
+
+#input-clubs option,
+#input-clubs select {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 1rem;
+  padding: 10px;
+  width: 95%;
+
+
+
+
+
+
+
+}
+
+
+
+#alertbox {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  font-size: 1rem;
+  border-radius: 30px;
+  width: 80%;
+  margin: auto;
+}
+#input-gender, #input-group {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+  width: 95%;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  border: 2px solid #f0f0f0;
+  flex-direction: row;
+}
+#input-gender input {
+  margin: 0 20px;
+  width: 22px;
+  height: 1.2rem;
+}
+#input-group {
+  /* width: 0; */
+}
+
+
+
+
+
+#input-group input {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  width: 20px;
+  height: 1.2rem;
+  margin-top: 0;
+
+}
+#input-group label {
+  margin-right: 4rem;
+
+}
+
 input:focus {
   outline: 0;
 }
+
+
+
+
+
+
 .input-control.success input {
   border-color: #09c372;
 }
