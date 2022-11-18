@@ -12,11 +12,9 @@
       <div class="container">
         <form id="form" name="myform">
 
-          <div name="alertbox" id="alertbox" role="alert">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-          </div>
-
+          
           <h1>Enter your registration infos</h1>
+          <div name="alertbox" id="alertbox" role="alert"></div>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
             quae, facere placeat provident culpa suscipit laboriosam rerum
@@ -24,34 +22,35 @@
             necessitatibus vitae possimus. Veniam, atque repellat?
           </p>
           <div class="input-control">
-            <label>enter your first name : </label>
-            <input name="firstname" id="first_name" type="text" />
+            <label>Enter your First Name : </label>
+            <input name="firstname" type="text" />
             <div class="error"></div>
           </div>
           <div class="input-control">
-            <label>enter your last name : </label>
-            <input name="lastname" id="last_name" type="text" />
+            <label>Enter your Last Name : </label>
+            <input name="lastname" type="text" />
             <div class="error"></div>
           </div>
           <div class="input-control">
-            <label>enter your Email : </label>
-            <input id="email" type="text" />
+            <label>Enter your Email : </label>
+            <input name="email" type="text" />
             <div class="error"></div>
           </div>
           <div class="input-control">
-            <label>enter your phone number : </label>
-            <input id="phone" type="text" />
+            <label>Enter your Phone Number : </label>
+            <input name="phone" type="text" />
             <div class="error"></div>
           </div>
-          <label>what is your gender : </label>
-          <div class="input-gender">
-            <label>male</label>
-            <input id="gender" type="radio" name="gender" />
-            <label>female</label>
-            <input id="gender" type="radio" name="gender" />
+          <label>what is your Gender : </label>
+          <div id="input-gender" class="input-control">
+            <input  type="radio" name="gender" /><label>MALE</label>
+            <input type="radio" name="gender" /> <label>FEMALE</label>
+
+
             <div class="error"></div>
           </div>
-          <div class="input-group">
+          <label> choose your Group : </label>
+          <div id="input-group" class="input-control">
             <input type="radio" name="group"><label>DW101</label>
             <input type="radio" name="group"><label>DW102</label>
             <input type="radio" name="group"><label>DW103</label>
@@ -59,8 +58,9 @@
             <input type="radio" name="group"><label>DM102</label>
             <div class="error"></div>
           </div>
-          <div class="input-clubs">
-            <select name="" multiple>
+          <div id="input-clubs" class="input-control">
+            <label>Choose the Clubs you want to join :</label>
+            <select name="clubs" multiple>
               <option value="1">Informatique</option>
               <option value="2">Robotique</option>
               <option value="3">Jeu d'échecs</option>
