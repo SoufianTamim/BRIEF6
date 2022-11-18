@@ -5,15 +5,6 @@ function empty(value) {
   return true;
 }
 
-// function checkR(radio, group) {
-//   radio.forEach((rd) => {
-//     if (rd.checked === true) {
-//       group[0] = true;
-//       return group;
-//     }
-//   });
-// }
-
 function checkR(array, jee) {
   array.forEach((rd) => {
     if (rd.checked === true) {
@@ -28,32 +19,21 @@ function checkR(array, jee) {
 
 const errors = [];
 
+alertbox.style.display = "none";
+alertbox.innerHTML = "";
+
+
 submit.onclick = function (ev) {
-  // alertbox.style.display = "none";
-  // alertbox.innerHTML = "";
   errors.length = 0;
   ev.preventDefault();
-  
+
   let firstname = document.getElementsByName("firstname")[0].value;
   let lastname = document.getElementsByName("lastname")[0].value;
-  let email = document.getElementsByName("email")[0];
-  let phone = document.getElementsByName("phone")[0];
+  let email = document.getElementsByName("email")[0].value;
+  let phone = document.getElementsByName("phone")[0].value;
   let gender = document.getElementsByName("gender");
-  let group = document.getElementsByName("group")[0].selectedOptions;
-  // let clubs = document.getElementsByName("clubs")[0].selectedOptions;
-
-
-
-  //   let clubs = document.getElementById("clubs").value;
-
-
-  // let phone = "0677846064"
-  // let phoneRe = /0[5-7]/g;
-
-  // console.log(phone.match(phoneRe));
-
-  // let emailRe = /([a-z])\w+.?([a-z])\w+.?([a-z])\w+?([0-9]?)@(gmail|hotmail|yahoo|ofppt).(com|org|net|ma)/g;
-
+  let group = document.getElementsByName("group");
+  let clubs = document.getElementsByName("clubs")[0].selectedOptions;
 
   //======================= first name validaton =============================//
   let myRegex = /^[a-zA-Z-\s]+$/;
@@ -78,6 +58,30 @@ submit.onclick = function (ev) {
     errors.push("last  name cannot contain numbers");
   }
 
+  //======================= phone Validation =============================//
+  let phoneRe = /([+])?(212)?0[5-7]\d{8}/g;
+
+  if (phone.length === 0) {
+    errors.push("phone number is required , cannot be empty ");
+  } else if (phoneRe.test(phone) === false) {
+    errors.push("phone number is invalid");
+  } else if (phone.length > 14) {
+    errors.push("phone number is too long");
+  }
+
+  //======================= email Validation =============================//
+
+  let emailRe =
+    /([a-z])\w+.?([a-z])\w+.?([a-z])\w+?([0-9]?)@(gmail|hotmail|yahoo|ofppt).(com|org|net|ma)/g;
+
+  if (email.length === 0) {
+    errors.push("email is required , cannot be empty ");
+  } else if (email.length > 50) {
+    errors.push("email is too long");
+  } else if (emailRe.test(email) === false) {
+    errors.push("email is invalid");
+  }
+
   //======================= gender Validation =============================//
 
   const genderC = [false];
@@ -88,23 +92,24 @@ submit.onclick = function (ev) {
     errors.push("Please you have to choose your gender");
   }
 
+  //======================= group Validation =============================//
+  const groupC = [false];
+
+  checkR(group, groupC);
+
+  if (groupC[0] === false) {
+    errors.push("Please you have to choose your group");
+  }
 
   //======================= group Validation =============================//
 
-
-
-
-  // const groupCase = [false];
-
-  // checkR(group, groupCase);
-
-  // if (groupCase[0] === false) {
-  //   errors.push("you must choose your group");
-  // }
-
-
-
-
+  if (clubs.length === 0) {
+    errors.push(
+      "you have to select at least one item in clubs , can't be empty "
+    );
+  } else if (clubs.length > 3) {
+    errors.push("you have selected too many choices max is 3 ");
+  }
 
   //======================= Errors =============================//
   if (errors.length > 0) {
