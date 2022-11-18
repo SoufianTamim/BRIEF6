@@ -1,22 +1,22 @@
-body{
+body {
   margin: 0;
   padding: 0;
   background: linear-gradient(to right, #377894, #67c2e0, #0ea5e6);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-h1{
+h1 {
   color: #0f2027;
   text-align: center;
   font-size: 3rem;
 }
-main label{
+main label {
   font-size: 1rem;
 }
-p{
+p {
   font-size: 1rem;
   width: 90%;
 }
-form{
+form {
   width: 70%;
   margin: 10% auto 10% auto;
   padding: 20px;
@@ -24,10 +24,11 @@ form{
   border-radius: 4px;
   font-size: 12px;
 }
-.alertbox {
+#alertbox{
   padding: 20px;
   background-color: #f44336;
   color: white;
+  font-size: 1rem;
   border-radius: 30px;
   width: 80%;
   margin: auto;
@@ -53,25 +54,34 @@ form{
   display: flex;
   flex-direction: column;
 }
-.input-control input, .input-clubs option,.input-group option,.input-clubs select,.input-group select {
+.input-control input,
+.input-clubs option,
+.input-group option,
+.input-clubs select,
+.input-group select {
   border: 2px solid #f0f0f0;
-  border-radius: 4px; 
+  border-radius: 4px;
   display: block;
   font-size: 12px;
   padding: 10px;
   width: 95%;
 }
-.input-clubs option,.input-group option,.input-clubs select,.input-group select{
+.input-clubs option,
+.input-group option,
+.input-clubs select,
+.input-group select {
   width: 97.5%;
   margin-bottom: 10px;
 }
-.input-clubs select,.input-group select{
+.input-clubs select,
+.input-group select {
   margin-bottom: 30px;
 }
-option:focus, select:focus{
+option:focus,
+select:focus {
   outline: 0;
 }
-.input-gender{
+.input-gender {
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -81,10 +91,10 @@ option:focus, select:focus{
   margin-bottom: 30px;
   border: 2px solid #f0f0f0;
 }
-.input-gender input{
+.input-gender input {
   margin: 0 20px;
-} 
-#submit{
+}
+#submit {
   padding: 10px;
   margin-top: 10px;
   width: 92.5%;
@@ -94,7 +104,7 @@ option:focus, select:focus{
   border-radius: 4px;
 }
 
-input:focus{
+input:focus {
   outline: 0;
 }
 .input-control.success input {
