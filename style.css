@@ -4,6 +4,7 @@ body {
   background: linear-gradient(to right, #377894, #67c2e0, #0ea5e6);
   font-family: "Poppins", sans-serif;
 }
+/* ====================== generel styling =================== */
 h1 {
   color: #0f2027;
   text-align: center;
@@ -24,30 +25,11 @@ form {
   border-radius: 4px;
   font-size: 12px;
 }
-.closebtn {
-  display: flex;
-  justify-content: flex-end;
-  margin-left: 10px;
-  margin-bottom: 5px;
-  color: white;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.closebtn:hover {
-  color: black;
-}
-.input-control {
-  display: flex;
-  flex-direction: column;
-}
 option:focus,
 select:focus {
   outline: 0;
 }
-
+/* ====================== inputs styling =================== */
 .input-control input{
   border: 2px solid #f0f0f0;
   border-radius: 4px;
@@ -69,7 +51,6 @@ select:focus {
 #input-group select {
   margin-bottom: 30px;
 }
-
 #submit {
   padding: 10px;
   margin-top: 10px;
@@ -79,8 +60,6 @@ select:focus {
   border: none;
   border-radius: 4px;
 }
-
-
 #input-clubs option,
 #input-clubs select {
   border: 2px solid #f0f0f0;
@@ -89,25 +68,6 @@ select:focus {
   font-size: 1rem;
   padding: 10px;
   width: 95%;
-
-
-
-
-
-
-
-}
-
-
-
-#alertbox {
-  padding: 20px;
-  background-color: #f44336;
-  color: white;
-  font-size: 1rem;
-  border-radius: 30px;
-  width: 80%;
-  margin: auto;
 }
 #input-gender, #input-group {
   display: flex;
@@ -128,11 +88,6 @@ select:focus {
 #input-group {
   /* width: 0; */
 }
-
-
-
-
-
 #input-group input {
   margin-right: 1rem;
   margin-left: 1rem;
@@ -145,16 +100,22 @@ select:focus {
   margin-right: 4rem;
 
 }
-
 input:focus {
   outline: 0;
 }
+/* ================= alertbox styling =================== */
+#alertbox {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  font-size: 1rem;
+  border-radius: 30px;
+  width: 80%;
+  margin: auto;
+}
 
 
-
-
-
-
+/* ==================== div error  ==================== */
 .input-control.success input {
   border-color: #09c372;
 }
