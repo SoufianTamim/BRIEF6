@@ -11,8 +11,7 @@
     <main>
       <div class="container">
         <form id="form" name="myform">
-
-          
+          <!-- ============== begining of the page ================ -->
           <h1>Enter your registration infos</h1>
           <div name="alertbox" id="alertbox" role="alert"></div>
           <p>
@@ -21,43 +20,48 @@
             expedita debitis quibusdam, accusamus quo repudiandae odio
             necessitatibus vitae possimus. Veniam, atque repellat?
           </p>
+          <!-- ================= first name input ================== -->
           <div class="input-control">
             <label>Enter your First Name : </label>
             <input name="firstname" type="text" />
             <div class="error"></div>
           </div>
+          <!-- ================= last name input ================== -->
           <div class="input-control">
             <label>Enter your Last Name : </label>
             <input name="lastname" type="text" />
             <div class="error"></div>
           </div>
+          <!-- ================= email input ================== -->
           <div class="input-control">
             <label>Enter your Email : </label>
             <input name="email" type="text" />
             <div class="error"></div>
           </div>
+          <!-- ================= Phone number input ================== -->
           <div class="input-control">
             <label>Enter your Phone Number : </label>
             <input name="phone" type="text" />
             <div class="error"></div>
           </div>
+          <!-- ================= gender input ================== -->
           <label>what is your Gender : </label>
           <div id="input-gender" class="input-control">
-            <input  type="radio" name="gender" /><label>MALE</label>
+            <input type="radio" name="gender" /><label>MALE</label>
             <input type="radio" name="gender" /> <label>FEMALE</label>
-
-
             <div class="error"></div>
           </div>
+          <!-- ================= group input ================== -->
           <label> choose your Group : </label>
           <div id="input-group" class="input-control">
-            <input type="radio" name="group"><label>DW101</label>
-            <input type="radio" name="group"><label>DW102</label>
-            <input type="radio" name="group"><label>DW103</label>
-            <input type="radio" name="group"><label>DM101</label>
-            <input type="radio" name="group"><label>DM102</label>
+            <input type="radio" name="group" /><label>DW101</label>
+            <input type="radio" name="group" /><label>DW102</label>
+            <input type="radio" name="group" /><label>DW103</label>
+            <input type="radio" name="group" /><label>DM101</label>
+            <input type="radio" name="group" /><label>DM102</label>
             <div class="error"></div>
           </div>
+          <!-- ================= Clubs input ================== -->
           <div id="input-clubs" class="input-control">
             <label>Choose the Clubs you want to join :</label>
             <select name="clubs" multiple>
@@ -70,10 +74,12 @@
             </select>
             <div class="error"></div>
           </div>
+          <!-- ================= submit button ================== -->
 
-          <button name="submit" id="submit" type="submit" >Sign Up</button>
-
-          <script src="/form.js"></script>
+          <button name="submit" id="submit" type="submit">Sign Up</button>
+          <!-- ======================= scripts links ==================== -->
+          <!-- <script src="/form.js"></script> -->
+          <script src="/prac.js"></script>
         </form>
       </div>
     </main>
