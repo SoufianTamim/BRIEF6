@@ -72,7 +72,7 @@ submit.onclick = function (ev) {
   //======================= email Validation =============================//
 
   let emailRe =
-    /([a-z])\w+.?([a-z])\w+.?([a-z])\w+?([0-9]?)@(gmail|hotmail|yahoo|ofppt).(com|org|net|ma)/g;
+    /([a-z])+\.?([a-z])+\.?([a-z])+?([0-9]?)@(gmail|hotmail|yahoo|ofppt).(com|org|net|ma)/g;
 
   if (email.length === 0) {
     errors.push("email is required , cannot be empty ");

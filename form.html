@@ -1,87 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main>
-      <div class="container">
-        <form id="form" name="myform">
-          <!-- ============== begining of the page ================ -->
-          <h1>Enter your registration infos</h1>
-          <div name="alertbox" id="alertbox" role="alert"></div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-            quae, facere placeat provident culpa suscipit laboriosam rerum
-            expedita debitis quibusdam, accusamus quo repudiandae odio
-            necessitatibus vitae possimus. Veniam, atque repellat?
-          </p>
-          <!-- ================= first name input ================== -->
-          <div class="input-control">
-            <label>Enter your First Name : </label>
-            <input name="firstname" type="text" />
-            <div class="error"></div>
-          </div>
-          <!-- ================= last name input ================== -->
-          <div class="input-control">
-            <label>Enter your Last Name : </label>
-            <input name="lastname" type="text" />
-            <div class="error"></div>
-          </div>
-          <!-- ================= email input ================== -->
-          <div class="input-control">
-            <label>Enter your Email : </label>
-            <input name="email" type="text" />
-            <div class="error"></div>
-          </div>
-          <!-- ================= Phone number input ================== -->
-          <div class="input-control">
-            <label>Enter your Phone Number : </label>
-            <input name="phone" type="text" />
-            <div class="error"></div>
-          </div>
-          <!-- ================= gender input ================== -->
-          <label>what is your Gender : </label>
-          <div id="input-gender" class="input-control">
-            <div><input type="radio" name="gender" /><label>MALE</label></div>
-            <div><input type="radio" name="gender" /> <label>FEMALE</label></div>
-            <div class="error"></div>
-          </div>
-          <!-- ================= group input ================== -->
-          <label> choose your Group : </label>
-          <div id="input-group" class="input-control">
-            <div> <input type="radio" name="group" /> <label>DW101</label> </div>
-            <div> <input type="radio" name="group" /> <label>DW102</label> </div>
-            <div> <input type="radio" name="group" /> <label>DW103</label> </div>
-            <div> <input type="radio" name="group" /> <label>DM101</label> </div>
-            <div> <input type="radio" name="group" /> <label>DM102</label> </div>
-            <div class="error"></div>
-          </div>
-          <!-- ================= Clubs input ================== -->
-          <div id="input-clubs" class="input-control">
-            <label>Choose the Clubs you want to join :</label>
-            <select name="clubs" multiple>
-              <option value="1">Informatique</option>
-              <option value="2">Robotique</option>
-              <option value="3">Jeu d'échecs</option>
-              <option value="4">Musique</option>
-              <option value="5">Foot</option>
-              <option value="5">Théatre</option>
-            </select>
-            <div class="error"></div>
-          </div>
-          <!-- ================= submit button ================== -->
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <form
+                    id="form" name="myform">
+                    <!-- ============== begining of the page ================ -->
+                    <h1>Enter your registration infos</h1>
+                    <div name="alertbox" id="alertbox" role="alert"></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+                                                                                                            quae, facere placeat provident culpa suscipit laboriosam rerum
+                                                                                                            expedita debitis quibusdam, accusamus quo repudiandae odio
+                                                                                                            necessitatibus vitae possimus. Veniam, atque repellat?
+                    </p>
+                    <!-- ================= first name input ================== -->
+                    <div class="input-control">
+                        <label>Enter your First Name :
+                        </label>
+                        <input id="firstname" name="firstname" type="text"/>
+                        <div class="error"></div>
+                    </div>
+                    <!-- ================= last name input ================== -->
+                    <div class="input-control">
+                        <label>Enter your Last Name :
+                        </label>
+                        <input id="lastname" name="lastname" type="text"/>
 
-          <button name="submit" id="submit" type="submit">Sign Up</button>
-          <!-- ======================= scripts links ==================== -->
-          <!-- <script src="/form.js"></script> -->
-          <script src="/prac.js"></script>
-        </form>
-      </div>
-    </main>
-  </body>
+                        <div class="error"></div>
+                    </div>
+                    <!-- ================= email input ================== -->
+                    <div class="input-control">
+                        <label>Enter your Email :
+                        </label>
+                        <input id="email" name="email" type="text"/>
+
+                        <div class="error"></div>
+                    </div>
+                    <!-- ================= Phone number input ================== -->
+                    <div class="input-control">
+                        <label>Enter your Phone Number :
+                        </label>
+                        <input id="phone" name="phone" type="text"/>
+                        <div class="error"></div>
+                    </div>
+                    <!-- ================= gender input ================== -->
+                    <label>what is your Gender :
+                    </label>
+                    <div id="input-gender" class="input-control">
+                        <div><input id="gender" type="radio" name="gender"/><label>MALE</label>
+                        </div>
+                        <div><input id="gender" type="radio" name="gender"/>
+                            <label>FEMALE</label>
+                        </div>
+                        <div class="error"></div>
+                    </div>
+                    <!-- ================= group input ================== -->
+                    <label>
+                        choose your Group :
+                    </label>
+                    <div id="input-group" class="input-control">
+                        <div>
+                            <input id="group" type="radio" name="group"/>
+                            <label>DW101</label>
+                        </div>
+                        <div>
+                            <input id="group" type="radio" name="group"/>
+
+                            <label>DW102</label>
+                        </div>
+                        <div>
+                            <input id="group" type="radio" name="group"/>
+
+                            <label>DW103</label>
+                        </div>
+                        <div>
+                            <input id="group" type="radio" name="group"/>
+
+                            <label>DM101</label>
+                        </div>
+                        <div>
+                            <input id="group" type="radio" name="group"/>
+
+                            <label>DM102</label>
+                        </div>
+                        <div class="error"></div>
+                    </div>
+                    <!-- ================= Clubs input ================== -->
+                    <div id="input-clubs" class="input-control">
+                        <label>Choose the Clubs you want to join :</label>
+                        <select id="clubs" name="clubs" multiple="multiple">
+
+                            <option value="1">Informatique</option>
+                            <option value="2">Robotique</option>
+                            <option value="3">Jeu d'échecs</option>
+                            <option value="4">Musique</option>
+                            <option value="5">Foot</option>
+                            <option value="5">Théatre</option>
+                        </select>
+                        <div class="error"></div>
+                    </div>
+                    <!-- ================= submit button ================== -->
+
+                    <button name="submit" id="submit" type="submit">Sign Up</button>
+                    <!-- ======================= scripts links ==================== -->
+                    <!-- <script src="/form.js"></script> -->
+                    <script src="/prac.js"></script>
+                </form>
+            </div>
+        </main>
+    </body>
 </html>
