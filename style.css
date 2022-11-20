@@ -1,21 +1,22 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right,#355c7d, #6c5b7b, #c06c84);
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
   font-family: "Poppins", sans-serif;
   width: 100%;
+  transition: 0.2s ease;
 }
 /* ====================== generel styling =================== */
 h1 {
-  color: white ;
+  color: white;
   text-align: center;
   font-size: 3rem;
-   background: linear-gradient(to right,#355c7d, #6c5b7b, #c06c84);
-   border-radius: 50px;
-   padding: 10px;
-   margin-top: 0;
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+  border-radius: 50px;
+  padding: 10px;
+  margin-top: 0;
 }
-main{
+main {
   display: block;
   margin: auto;
 }
@@ -39,7 +40,7 @@ select:focus {
   outline: 0;
 }
 /* ====================== inputs styling =================== */
-.input-control input{
+.input-control input {
   border: 2px solid #f0f0f0;
   border-radius: 4px;
   display: block;
@@ -47,14 +48,13 @@ select:focus {
   padding: 10px;
   width: 95%;
 }
-#input-clubs option{
+#input-clubs option {
   width: 95%;
   margin-bottom: 10px;
 }
 
-#input-clubs select{
+#input-clubs select {
   width: 99%;
-  
 }
 #input-clubs select,
 #input-group select {
@@ -69,11 +69,14 @@ select:focus {
   border: none;
   border-radius: 40px;
   font-size: 1rem;
+  box-shadow: 0 5px #6c5b7b;
 }
-#submit:hover{
-background-color: #c06c84;
-transition-delay: 1s;
-
+#submit:hover {
+  background-color: #c06c84;
+}
+#submit:active {
+  background-color: #355c7d;
+  transform: translateY(4px);
 }
 #input-clubs option,
 #input-clubs select {
@@ -84,7 +87,8 @@ transition-delay: 1s;
   padding: 10px;
   width: 97.5%;
 }
-#input-gender, #input-group {
+#input-gender,
+#input-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -96,20 +100,20 @@ transition-delay: 1s;
   border: 2px solid #f0f0f0;
   flex-direction: row;
 }
-#input-group div, #input-gender div{
+#input-group div,
+#input-gender div {
   margin: 2%;
 }
-#input-group input,#input-gender input  {
+#input-group input,
+#input-gender input {
   width: 60px;
   height: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-
 }
 #input-group label {
   margin-right: 1rem;
   flex-wrap: wrap;
-
 }
 input:focus {
   outline: 0;
@@ -125,18 +129,19 @@ input:focus {
   margin: auto;
 }
 
-
 /* ==================== div error  ==================== */
 .input-control.success input {
-  border: 2px solid #09c372;
+  border: 2px solid #355c7d;
+  box-shadow: 10px 5px 5px #355c7d;
 }
 
 .input-control.error input {
-  border-color: 2px solid #ff3860;
+  border: 2px solid #c06c84;
+  box-shadow: 10px 5px 5px #c06c84;
 }
 .input-control .error {
   padding: 5px;
-  color: #ff3860;
+  color: #c06c84;
   font-size: 12px;
   height: 20px;
 }
