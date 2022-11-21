@@ -56,11 +56,14 @@ select:focus {
 #input-clubs select {
   width: 99%;
 }
-#input-clubs select,
-#input-group select {
-  margin-bottom: 30px;
+.errorr{
+  padding: 5px;
+  color: #c06c84;
+  font-size: 12px;
+  margin-bottom: 20px;
 }
-#submit {
+
+.submit {
   padding: 10px;
   margin-top: 10px;
   width: 97%;
@@ -71,10 +74,14 @@ select:focus {
   font-size: 1rem;
   box-shadow: 0 5px #6c5b7b;
 }
-#submit:hover {
+.submit a{
+  text-decoration: none;
+  color: white;
+}
+.submit:hover {
   background-color: #c06c84;
 }
-#submit:active {
+.submit:active {
   background-color: #355c7d;
   transform: translateY(4px);
 }
@@ -96,7 +103,6 @@ select:focus {
   background-color: white;
   width: 95%;
   border-radius: 4px;
-  margin-bottom: 30px;
   border: 2px solid #f0f0f0;
   flex-direction: row;
 }
@@ -134,7 +140,6 @@ input:focus {
   border: 2px solid #355c7d;
   box-shadow: 10px 5px 5px #355c7d;
 }
-
 .input-control.error input {
   border: 2px solid #c06c84;
   box-shadow: 10px 5px 5px #c06c84;
