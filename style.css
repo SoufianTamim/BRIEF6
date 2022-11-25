@@ -124,16 +124,6 @@ select:focus {
 input:focus {
   outline: 0;
 }
-/* ================= alertbox styling =================== */
-#alertbox {
-  padding: 20px;
-  background-color: #c06c84;
-  color: white;
-  font-size: 1rem;
-  border-radius: 30px;
-  width: 80%;
-  margin: auto;
-}
 
 /* ==================== div error  ==================== */
 .input-control.success input {
