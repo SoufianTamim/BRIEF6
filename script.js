@@ -1,10 +1,10 @@
+
 // ============================ create variables =================================================== //
 const form = document.getElementById("form");
 const firstname = document.getElementById("firstname");
 const lastname = document.getElementById("lastname");
 const email = document.getElementById("email");
 const phone = document.getElementById("phone");
-const group = document.getElementsByClassName("group");
 const clubs = document.getElementById("clubs").selectedOptions;
 // ============================ event listner adding ====================================== //
 form.addEventListener("submit", (e) => {
@@ -61,7 +61,7 @@ lastname.onblur = () =>{
 }
 phone.onblur = () =>{
   const phoneValue = phone.value.trim();
-  let phoneRe = /([+])?(212)?0[5-7]\d{8}$/g;
+  let phoneRe = /^([+])?(212)?0[5-7]\d{8}$/g;
   if (phoneValue === "") {
     setError(phone, "phone number is required , cannot be empty ");
   } else if (phoneValue.length > 14) {
@@ -74,7 +74,7 @@ phone.onblur = () =>{
 }
 email.onblur = () => {
   const emailValue = email.value.trim();
-  let emailRe =/([a-z])+\.?([a-z])+\.?([a-z])+?([0-9]?)@(gmail|hotmail|yahoo|ofppt).(com|org|net|ma)/g;
+  let emailRe =/^([aA-zZ])+\.?([aA-zZ])+\.?([a-z])+?([0-9]?)@(gmail|hotmail|yahoo|ofppt).(com|org|net|ma)$/g;
   if (emailValue === "") {
     setError(email, "email is required , cannot be empty ");
   } else if (emailValue.length > 50) {
@@ -162,7 +162,6 @@ const validateInputs = () => {
   }
   //======================= group Validation =============================//
   if (gen[0].checked == false && gen[1].checked == false) {
-    // alert("Please you have to choose your gender")
     document.querySelector('.error-gender').innerHTML = "Please you have to choose your gender"
     arr.push(false)
 
@@ -177,10 +176,10 @@ const validateInputs = () => {
 
   }
   if (gro[0].checked == false && gro[1].checked == false && gro[2].checked == false && gro[3].checked == false && gro[4].checked == false) {
-    // alert("Please you have to choose your gender")
     document.querySelector('.error-group').innerHTML = "Please you have to choose your group"
     arr.push(false)
   }
+
   
   if (arr.length === 0) {
     document.getElementById('form').submit();
